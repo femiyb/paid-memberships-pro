@@ -6,7 +6,7 @@ jQuery( document ).ready( function( $ ) {
 	var stripe, elements, cardNumber, cardExpiry, cardCvc;
 
 	// Identify with Stripe.
-	stripe = Stripe( pmproStripe.publishableKey );
+	stripe = Stripe( pmproStripe.publishableKey, {locale: 'ja'} );
 	elements = stripe.elements();
 
 	// Create Elements.
